@@ -24,3 +24,8 @@ kafka-topics --create --topic cursos --bootstrap-server localhost:9094
 ```
 kafka-topics --list --bootstrap-server localhost:9094
 ```
+
+### Excluindo tópicos
+```
+.\bin\windows\kafka-topics.bat --delete --topic cursos --bootstrap-server localhost:9094
+```
