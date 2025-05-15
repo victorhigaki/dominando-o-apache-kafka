@@ -29,3 +29,8 @@ kafka-topics --list --bootstrap-server localhost:9094
 ```
 .\bin\windows\kafka-topics.bat --delete --topic cursos --bootstrap-server localhost:9094
 ```
+
+### Criando um tópico com partição
+```
+.\bin\windows\kafka-topics.bat --create --topic chat --bootstrap-server localhost:9094 --partitions 2 --replication-factor 2
+```
