@@ -34,3 +34,8 @@ kafka-topics --list --bootstrap-server localhost:9094
 ```
 .\bin\windows\kafka-topics.bat --create --topic chat --bootstrap-server localhost:9094 --partitions 2 --replication-factor 2
 ```
+
+### Alterando quantidade de partições de um tópico
+```
+.\bin\windows\kafka-topics.bat --alter --topic chat --bootstrap-server localhost:9094 --partitions 3
+```
