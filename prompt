@@ -1,0 +1,11 @@
+### Criando um tópico
+```
+.\bin\windows\kafka-topics.bat --create --topic cursos --bootstrap-server localhost:9094
+```
+
+### minha resolucao:
+```
+docker exec --workdir /bin/ -it broker sh
+kafka-topics --create --topic cursos --bootstrap-server localhost:9094
+```
+
