@@ -1,0 +1,6 @@
+.\bin\windows\kafka-console-consumer.bat --topic chat --bootstrap-server localhost:9094 --from-beginning --property print.partition=true --property print.offset=true --group grupo1
+
+.\bin\windows\kafka-console-consumer.bat --topic chat --bootstrap-server localhost:9094 --from-beginning --property print.partition=true --property print.offset=true --group grupo2
+
+.\bin\windows\kafka-console-consumer.bat --topic chat --bootstrap-server localhost:9094 --from-beginning --property print.partition=true --property print.offset=true --group grupo1
+
