@@ -3,11 +3,6 @@
 .\bin\windows\kafka-topics.bat --create --topic cursos --bootstrap-server localhost:9094
 ```
 
-```
-docker exec --workdir /bin/ -it broker sh
-kafka-topics --create --topic cursos --bootstrap-server localhost:9094
-```
-
 ### Listando tópicos
 ```
 .\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9094
@@ -19,10 +14,6 @@ kafka-topics --create --topic cursos --bootstrap-server localhost:9094
 
 ```
 .\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9094 localhost:9095
-```
-
-```
-kafka-topics --list --bootstrap-server localhost:9094
 ```
 
 ### Excluindo tópicos
@@ -38,4 +29,9 @@ kafka-topics --list --bootstrap-server localhost:9094
 ### Alterando quantidade de partições de um tópico
 ```
 .\bin\windows\kafka-topics.bat --alter --topic chat --bootstrap-server localhost:9094 --partitions 3
+```
+
+### Obtendo informações de um tópico
+```
+.\bin\windows\kafka-topics.bat --describe --topic chat --bootstrap-server localhost:9094
 ```
