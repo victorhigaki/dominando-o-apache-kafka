@@ -1,0 +1,4 @@
+Schema Registry
+
+fornecer uma API RESTful para gerenciar e versionar esquemas no formato Avro, JSON Schema e Protobuf para um topico
+
