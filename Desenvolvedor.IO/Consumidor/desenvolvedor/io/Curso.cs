@@ -17,9 +17,9 @@ namespace desenvolvedor.io
 	public partial class Curso : global::Avro.Specific.ISpecificRecord
 	{
 		public static global::Avro.Schema _SCHEMA = global::Avro.Schema.Parse("{\"type\":\"record\",\"name\":\"Curso\",\"namespace\":\"desenvolvedor.io\",\"fields\":[{\"name\":" +
-				"\"id\",\"type\":\"string\"},{\"name\":\"descricao\",\"type\":\"string\"}]}");
-		private string _id;
-		private string _descricao;
+				"\"Id\",\"type\":\"string\"},{\"name\":\"Descricao\",\"type\":\"string\"}]}");
+		private string _Id;
+		private string _Descricao;
 		public virtual global::Avro.Schema Schema
 		{
 			get
@@ -27,34 +27,34 @@ namespace desenvolvedor.io
 				return Curso._SCHEMA;
 			}
 		}
-		public string id
+		public string Id
 		{
 			get
 			{
-				return this._id;
+				return this._Id;
 			}
 			set
 			{
-				this._id = value;
+				this._Id = value;
 			}
 		}
-		public string descricao
+		public string Descricao
 		{
 			get
 			{
-				return this._descricao;
+				return this._Descricao;
 			}
 			set
 			{
-				this._descricao = value;
+				this._Descricao = value;
 			}
 		}
 		public virtual object Get(int fieldPos)
 		{
 			switch (fieldPos)
 			{
-			case 0: return this.id;
-			case 1: return this.descricao;
+			case 0: return this.Id;
+			case 1: return this.Descricao;
 			default: throw new global::Avro.AvroRuntimeException("Bad index " + fieldPos + " in Get()");
 			};
 		}
@@ -62,8 +62,8 @@ namespace desenvolvedor.io
 		{
 			switch (fieldPos)
 			{
-			case 0: this.id = (System.String)fieldValue; break;
-			case 1: this.descricao = (System.String)fieldValue; break;
+			case 0: this.Id = (System.String)fieldValue; break;
+			case 1: this.Descricao = (System.String)fieldValue; break;
 			default: throw new global::Avro.AvroRuntimeException("Bad index " + fieldPos + " in Put()");
 			};
 		}
